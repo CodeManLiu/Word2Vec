@@ -177,8 +177,6 @@ final class Word2Vec(override val uid: String)
   def this() = this(Identifiable.randomUID("word2vec"))
 
   /** @group setParam */
-  def setCustomDic(value: String): this.type = set(customDic,value)
-  /** @group setParam */
   def setSample(value: Double): this.type = set(sample, value)
   /** @group setParam */
   def setMaxVocabSize(value: Int): this.type = set(maxVocabSize, value)
@@ -208,6 +206,8 @@ final class Word2Vec(override val uid: String)
   def setMinCount(value: Int): this.type = set(minCount, value)
   /** @group setParam */
   def setMaxSentenceLength(value: Int): this.type = set(maxSentenceLength, value)
+  /** @group setParam */
+  def setCustomDic(value: String): this.type = set(customDic,value)
 
   override def fit(dataset: Dataset[_]): Word2VecModel = {
     transformSchema(dataset.schema)

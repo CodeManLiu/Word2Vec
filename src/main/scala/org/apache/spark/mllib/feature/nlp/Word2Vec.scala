@@ -639,6 +639,7 @@ class Word2Vec extends Serializable with Logging {
             }
             (syn0, syn1, syn1neg, lwc, wc)
         }
+
         val syn0Local = model._1
         val syn1Local = model._2
         val syn1negLocal = model._3
@@ -717,6 +718,7 @@ class Word2Vec extends Serializable with Logging {
       bcSyn1Global.destroy(false)
       bcSyn1negGlobal.destroy(false)
     }
+
     newSentences.unpersist()
     val wordsCount = vocab.map(x => (x.word, x.cn)).toMap
     new Word2VecModel(vocabHash.toMap, syn0Global, wordsCount)
