@@ -188,7 +188,7 @@ class Word2Vec extends Serializable with Logging {
   private val EXP_TABLE_SIZE = 6000
   private val MAX_EXP = 6
   private val MAX_CODE_LENGTH = 40
-  private val NEG_TABLE_SIZE = 1e10.toInt
+  private val NEG_TABLE_SIZE = 1e8.toInt
 
   private var trainWordsCount = 0L
   private var concatVectorSize = 0
