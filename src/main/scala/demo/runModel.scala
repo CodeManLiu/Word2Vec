@@ -1,9 +1,11 @@
+package demo
+
 import org.apache.spark.SparkConf
 import org.apache.spark.ml.feature.Tokenizer
 import org.apache.spark.ml.feature.nlp.Word2Vec
 import org.apache.spark.sql.SparkSession
 
-object runModelTrainer {
+object runModel {
   def main(args: Array[String]): Unit = {
     val trainPath = args(0)
     val executors = args(1).toInt
