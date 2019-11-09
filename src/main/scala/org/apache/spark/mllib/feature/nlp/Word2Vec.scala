@@ -185,7 +185,7 @@ class Word2Vec extends Serializable with Logging {
     this
   }
 
-  private val EXP_TABLE_SIZE = 6000
+  private val EXP_TABLE_SIZE = 1000
   private val MAX_EXP = 6
   private val MAX_CODE_LENGTH = 40
   private val NEG_TABLE_SIZE = 1e8.toInt
