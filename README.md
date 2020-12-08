@@ -1,2 +1,1 @@
-# sparkWord2Vec
-# 2018-NJU-PASA-Graduation
+2018-NJU-PASA
